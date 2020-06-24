@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url('/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url('/fonts/OpenSans-SemiBold.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background: #00171f;
+    color: #fff;
+}
+*::-moz-selection {
+    background: #00171f;
+    color: #fff;
+}
+body {
+    background: #ffffff;
+    font-family: "OpenSans";
+    font-size: 16px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    background: cover;
+    height: 100vh;
+}
+.menu {
+    background: #003459;
+    padding: 15px;
+    flex-basis: 250px;
+    align-self: stretch;
+    height: auto;
+}
+.menu ul {
+    list-style: none;
+    line-height: 50px;
+}
+header {
+    flex-grow: 1;
+    padding: 50px 100px;
+}
+li a{
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+li a:hover {
+    font-family: "OpenSans-SemiBold";
+    margin-left: 30px;
+}
+table, td, th {
+    border: 1px solid rgba(0,0,0,.2);
+}
+table {
+    border-collapse: collapse;
+    width: 800px;
+    text-align: center;
+}
+th, td {
+    padding: 10px 20px;
+
+}
+th {
+    background: #007ea7;
+    color: #fff;
+}
+.principal {
+    flex-grow: 1;
+}
+tr:hover {
+    background: #e5e5e5;
+}
+table {
+    width: 100%;
+}
+.main {
+    padding: 20px 100px;
+}
+.add {
+    display: inline-block;
+    order: 1;
+}
+.add a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 164, 230, .8);
+    color: #fff;
+    margin: 10px 0;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background .3s ease;
+}
+.add a:hover {
+    background: rgba(0, 164, 230, 1);
+}
+td a, td button, form{
+    display: inline-block;
+}
+td a, td button {
+    margin: 0 10px;
+}
+td a {
+    text-decoration: none;
+    color: #f9c80e;
+}
+td a:hover {
+    text-decoration: underline;
+}
+td button {
+    border: none;
+    background: #fff;
+    color: #d80032;
+    font-size: 16px;
+    cursor: pointer;
+}
+.formulario {
+    width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px grey;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.formulario form {
+    padding: 20px;
+    width: 100%;
+}
+.formulario input {
+    display: block;
+}
+.formulario select {
+    display: block;
+    padding: 10px;
+    border: 1px solid #00a8e8;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+}
+.formulario select:focus {
+    outline: 0px;
+    border: 1px solid #00a8e8;
+    box-shadow: 0 0 5px #00a8e8;
+}
+.formulario form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #00a8e8;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+}
+.formulario form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.formulario form input[type="text"]:focus {
+    outline: 0px;
+    border: 1px solid #00a8e8;
+    box-shadow: 0 0 5px #00a8e8;
+}
+
+.formulario input[type="submit"] {
+    padding: 10px 20px;
+    margin: 0 auto;
+    background: rgba(0, 164, 230, .8);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    transition: all .5s ease;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.formulario input[type="submit"]:hover {
+    background: rgba(0, 164, 230, 1);
+}
+.buscar {
+    display: inline-block;
+    order: 2;
+}
+.opcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buscar form select {
+    padding: 7px;
+    font-size: 14px;
+    border: 1px solid #00a8e8;
+    border-radius: 5px;
+}
+.buscar form select:focus {
+    outline: 0px;
+    border: 1px solid #00a8e8;
+    box-shadow: 0 0 5px #00a8e8;
+}
+.buscar form button {
+    padding: 5px 10px;
+    background: rgba(0, 164, 230, .8);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    transition: background .3s ease;
+}
+.buscar form button:hover {
+    outline: 0px;
+    background: rgba(0, 164, 230, 1);
+}
+.formulario form span {
+    color: #f71735;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.main .mensaje span {
+    background: rgba(40, 167, 69, .3);
+    color: #28a745;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #28a745;
+}
+.duenos a{
+    color: #000;
+    text-decoration: none;
+}
+.duenos a:hover {
+    text-decoration: underline;
+}
